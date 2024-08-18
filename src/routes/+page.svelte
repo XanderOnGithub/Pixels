@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import { loginWithGoogle } from "$lib/auth";
+    import PixelGrid from "../components/pixelGrid.svelte";
+</script>
+
+<button on:click={loginWithGoogle}>Login with Google</button>
+
+<PixelGrid />
